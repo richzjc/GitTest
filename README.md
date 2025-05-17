@@ -21,7 +21,7 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
    查看git的配置，包括user.name, user.email
 5. `git add .` </br> 将文件添加到暂存区
 6. `git remote add origin url` </br>关联远程的仓库地址
-7. `git fetch` 获取远程的branch 和 tag
+7. `git fetch` </br>获取远程的branch 和 tag
 8. `git branch` </br> 查看所有的本地分支
 9.  `git branch -a` </br> 查看所有本地与远程的所有分支
 10.  
