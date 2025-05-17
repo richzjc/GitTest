@@ -19,6 +19,7 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
    代码提交到远程需要查看代码是谁提交的， 因此需要配置用户名和邮箱
 4. `git config —list`
    查看git的配置，包括user.name, user.email
-5. 
+5. `git add .` </br> 将文件添加到暂存区
+6. 
 
 
