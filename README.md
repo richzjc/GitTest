@@ -31,5 +31,6 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 14. `git checkout -b masterNew master` </br>从给定的master切换出一个新的分支 masterNew
 15. `git commit -m '提交的备注信息'` </br> 将暂存区里面的文件内容提交到本地分支
 16. `git push -u origin master` </br> 将代码推送到远程的master
-17. 
+17. `git branch --set-upstream-to=origin/main master` </br> 将本地的master分支与远程的main分支关联
+18. 
 
