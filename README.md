@@ -29,5 +29,7 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 12. `git push --tags` </br> 将所有本地tags推送到远端
 13. `git checkout tag名或者分支名` </br> 切换到指定的tag或者分支名
 14. `git checkout -b masterNew master` </br>从给定的master切换出一个新的分支 masterNew
-15. 
+15. `git commit -m '提交的备注信息'` </br> 将暂存区里面的文件内容提交到本地分支
+16. `git push -u origin master` </br> 将代码推送到远程的master
+17. 
 
