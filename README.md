@@ -27,5 +27,7 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 10. `git tag v1.0.0` </br> 创建本地tag
 11. `git tag` </br> 查看本地所有的tag
 12. `git push --tags` </br> 将所有本地tags推送到远端
-13. 
+13. `git checkout tag名或者分支名` </br> 切换到指定的tag或者分支名
+14. `git checkout -b masterNew master` </br>从给定的master切换出一个新的分支 masterNew
+15. 
 
