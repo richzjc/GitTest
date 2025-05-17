@@ -13,10 +13,12 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 1. git init
    (在项目的根目录下面执行，初始化git仓库)
 2. git config —global user.name ‘richzjc’
+   </br>
    git config —global user.email ‘zhangjianchuan@huaqin.com’
+   </br>
    代码提交到远程需要查看代码是谁提交的， 因此需要配置用户名和邮箱
-3. git config —list
+4. git config —list
    查看git的配置，包括user.name, user.email
-4. 
+5. 
 
 
