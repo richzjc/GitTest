@@ -45,5 +45,7 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 24. git merge 分支名 </br> 在没有冲突的情况下，会自动提交到本地仓库， 影响工作区， 暂存区， 本地仓库
 25. git merge --no-commit 分支名 </br> 如何只想内容同步到工作区， 添加--no-commit参数
 26. git merge --abort </br> 放弃上一次的merge操作， 恢复工作区， 暂存区， 本地仓库的文件
-27. 
+27. git stash  /   git stash pop </br>
+    主要应用于在当前分支的工作区和暂存区有修改，  但是不想急着提交到本地仓库， 可以调用 git stash先缓存，在切换分析， 恢复工作区 修改则调用 git stash pop
+28. 
 
