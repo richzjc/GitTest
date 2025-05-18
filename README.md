@@ -39,5 +39,11 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 21.  `git switch 分支名` </br> 用于切换到指定分支， git checkout 分支名，也可以切换分支名， 这两者有啥区别， 知道吗？
 22.  `git reset 模式  提交的hash值` </br>
        --hard:</br> 该操作会替换，暂存区， 工作区， 本地仓库的文件修改
-    --soft:
+    --soft: </br> 替换本地仓库的文件内容
+     --mixed: 替换本地仓库与 暂存区的文件内容。 自己操作一遍就知道结果了
+23. git log / git log --all </br> 查看提交的日志记录
+24. git merge 分支名 </br> 在没有冲突的情况下，会自动提交到本地仓库， 影响工作区， 暂存区， 本地仓库
+25. git merge --no-commit 分支名 </br> 如何只想内容同步到工作区， 添加--no-commit参数
+26. git merge --abort </br> 放弃上一次的merge操作， 恢复工作区， 暂存区， 本地仓库的文件
+27. 
 
