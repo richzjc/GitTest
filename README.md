@@ -32,5 +32,8 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 15. `git commit -m '提交的备注信息'` </br> 将暂存区里面的文件内容提交到本地分支
 16. `git push -u origin master` </br> 将代码推送到远程的master
 17. `git branch --set-upstream-to=origin/main master` </br> 将本地的master分支与远程的main分支关联
-18. 
+18. `git rm --cached  文件路径` </br> 从暂存区移除文件， 文件回到了工作区
+19. `git rm -f 文件路径` </br> 从暂存区移除文件， 并删除工作区里面的文件
+20. `git restore 文件路径` </br> 将工作区里面的文件还原成暂存区的文件内容， 会丢弃工作区的内容修改
+21.  
 
