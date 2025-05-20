@@ -48,5 +48,6 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 27. git stash  /   git stash pop </br>
     主要应用于在当前分支的工作区和暂存区有修改，  但是不想急着提交到本地仓库， 可以调用 git stash先缓存，在切换分析， 恢复工作区 修改则调用 git stash pop
 28. git commit --amend </br> 这个命令，主要想说一下--amend的用法，我发现我公司在使用gerrit进行代码管理的时候， --amend的参数很重要。主要用于对上一次提交进行修改
-29. 
+29. git cherry-pic 提交的哈希值 </br> 将某一笔提交应用到当前分支， 并应用到了本地仓库
+30. git cherry-pic -n 提交的哈希值 </br> 将某一笔提交应用到当前分支， 并应用到了工作区
 
