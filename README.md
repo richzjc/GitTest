@@ -17,6 +17,7 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 # git的相关命令
 `git init`</br>
    (在项目的根目录下面执行，初始化git仓库)
+   ---
 `git config —global user.name ‘richzjc’`
    </br>
 `git config —global user.email ‘zhangjianchuan@huaqin.com’`
