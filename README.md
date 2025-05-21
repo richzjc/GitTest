@@ -15,44 +15,45 @@ lint 规则检查。 刚进公司对gerrit 有一些不明白， 今天特意脑
 
 ---
 # git的相关命令
-`git init`</br>
+
+1. `git init`</br>
    (在项目的根目录下面执行，初始化git仓库)
-`git config —global user.name ‘richzjc’`
+2. `git config —global user.name ‘richzjc’`
    </br>
-`git config —global user.email ‘zhangjianchuan@huaqin.com’`
+   `git config —global user.email ‘zhangjianchuan@huaqin.com’`
    </br>
    代码提交到远程需要查看代码是谁提交的， 因此需要配置用户名和邮箱
-   
-`git config —list`</br>
+4. `git config —list`</br>
    查看git的配置，包括user.name, user.email
-`git add .` </br> 将文件添加到暂存区
-`git remote add origin url` </br>关联远程的仓库地址
-`git fetch` </br>获取远程的branch 和 tag
-`git branch` </br> 查看所有的本地分支
-`git branch -a` </br> 查看所有本地与远程的所有分支
-`git tag v1.0.0` </br> 创建本地tag
-`git tag` </br> 查看本地所有的tag
-`git push --tags` </br> 将所有本地tags推送到远端
-`git checkout tag名或者分支名` </br> 切换到指定的tag或者分支名
-`git checkout -b masterNew master` </br>从给定的master切换出一个新的分支 masterNew
-`git commit -m '提交的备注信息'` </br> 将暂存区里面的文件内容提交到本地分支
-`git push -u origin master` </br> 将代码推送到远程的master
-`git branch --set-upstream-to=origin/main master` </br> 将本地的master分支与远程的main分支关联
-`git rm --cached  文件路径` </br> 从暂存区移除文件， 文件回到了工作区
-`git rm -f 文件路径` </br> 从暂存区移除文件， 并删除工作区里面的文件
-`git restore 文件路径` </br> 将工作区里面的文件还原成暂存区的文件内容， 会丢弃工作区的内容修改
-`git switch 分支名` </br> 用于切换到指定分支， git checkout 分支名，也可以切换分支名， 这两者有啥区别， 知道吗？
-`git reset 模式  提交的hash值` </br>
+5. `git add .` </br> 将文件添加到暂存区
+6. `git remote add origin url` </br>关联远程的仓库地址
+7. `git fetch` </br>获取远程的branch 和 tag
+8. `git branch` </br> 查看所有的本地分支
+9. `git branch -a` </br> 查看所有本地与远程的所有分支
+10. `git tag v1.0.0` </br> 创建本地tag
+11. `git tag` </br> 查看本地所有的tag
+12. `git push --tags` </br> 将所有本地tags推送到远端
+13. `git checkout tag名或者分支名` </br> 切换到指定的tag或者分支名
+14. `git checkout -b masterNew master` </br>从给定的master切换出一个新的分支 masterNew
+15. `git commit -m '提交的备注信息'` </br> 将暂存区里面的文件内容提交到本地分支
+16. `git push -u origin master` </br> 将代码推送到远程的master
+17. `git branch --set-upstream-to=origin/main master` </br> 将本地的master分支与远程的main分支关联
+18. `git rm --cached  文件路径` </br> 从暂存区移除文件， 文件回到了工作区
+19. `git rm -f 文件路径` </br> 从暂存区移除文件， 并删除工作区里面的文件
+20. `git restore 文件路径` </br> 将工作区里面的文件还原成暂存区的文件内容， 会丢弃工作区的内容修改
+21.  `git switch 分支名` </br> 用于切换到指定分支， git checkout 分支名，也可以切换分支名， 这两者有啥区别， 知道吗？
+22.  `git reset 模式  提交的hash值` </br>
        --hard:</br> 该操作会替换，暂存区， 工作区， 本地仓库的文件修改
     --soft: </br> 替换本地仓库的文件内容
      --mixed: 替换本地仓库与 暂存区的文件内容。 自己操作一遍就知道结果了
-git it log / git log --all </br> 查看提交的日志记录
-git merge 分支名 </br> 在没有冲突的情况下，会自动提交到本地仓库， 影响工作区， 暂存区， 本地仓库
-git merge --no-commit 分支名 </br> 如何只想内容同步到工作区， 添加--no-commit参数
-git merge --abort </br> 放弃上一次的merge操作， 恢复工作区， 暂存区， 本地仓库的文件
-git stash  /   git stash pop </br>
+23. `git log / git log --all` </br> 查看提交的日志记录
+24. `git merge 分支名 `</br> 在没有冲突的情况下，会自动提交到本地仓库， 影响工作区， 暂存区， 本地仓库
+25. `git merge --no-commit 分支名` </br> 如何只想内容同步到工作区， 添加--no-commit参数
+26. `git merge --abort` </br> 放弃上一次的merge操作， 恢复工作区， 暂存区， 本地仓库的文件
+27. `git stash  /   git stash pop` </br>
     主要应用于在当前分支的工作区和暂存区有修改，  但是不想急着提交到本地仓库， 可以调用 git stash先缓存，在切换分析， 恢复工作区 修改则调用 git stash pop
-git commit --amend </br> 这个命令，主要想说一下--amend的用法，我发现我公司在使用gerrit进行代码管理的时候， --amend的参数很重要。主要用于对上一次提交进行修改
-git cherry-pic 提交的哈希值 </br> 将某一笔提交应用到当前分支， 并应用到了本地仓库
-git cherry-pic -n 提交的哈希值 </br> 将某一笔提交应用到当前分支， 并应用到了工作区
+28. `git commit --amend` </br> 这个命令，主要想说一下--amend的用法，我发现我公司在使用gerrit进行代码管理的时候， --amend的参数很重要。主要用于对上一次提交进行修改
+29. `git cherry-pic 提交的哈希值` </br> 将某一笔提交应用到当前分支， 并应用到了本地仓库
+30. `git cherry-pic -n 提交的哈希值` </br> 将某一笔提交应用到当前分支， 并应用到了工作区
+31. `git rebase 分支名` </br> 将当前分支的提交，应用到指定分支上， 会出现冲突， 需要手动解决, 解决完冲突后，需要执行`git rebase --continue`,与git merge一样， 影响工作区， 暂存区， 本地仓库
 
